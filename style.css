@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #8A51FC;        
+}
+
+.max-width {
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-money {
+    width: 500px;
+    height: 500px;
+}
+
+.container-convert {
+    padding: 44px 24px 24px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-coins {
+    display: flex;
+    gap: 10px;
+}
+
+.container-coin {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.container-coin label {
+    color: #777;    
+    font-size: 14px;    
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.container-coin select   {
+    width: 327px;
+    font-size: 16px;    
+    font-weight: 700;
+    line-height: 18px;
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 1px solid #BBB;
+    background: #FFF;
+    color: #555;
+    appearance: none;
+    cursor: pointer;    
+}
+
+.container-coin select option {
+    border: 2px solid red;
+}
+
+.container-convert-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-value label {
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.content-value input {
+    width: 327px;
+    font-size: 16px;    
+    font-weight: 700;
+    line-height: 18px;
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 1px solid #BBB;
+    background: #FFF;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    color: #555;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.button-convert {
+    width: 327px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 15px 0;
+    margin-top: 24px;
+    border: none;
+    border-radius: 5px;
+    background: #532195;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.button-convert:hover {
+    opacity: 0.8;
+}
+
+.button-convert:active {
+    opacity: 100%;
+}
+
+.container-convert-result {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    margin-top: 44px;
+    padding: 12px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.content-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-result p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.content-result span {
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.image-arrow {
+    width: 35px;
+    height: 49.939px;
+}
