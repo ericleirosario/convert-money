@@ -149,9 +149,11 @@ input[type=number]::-webkit-inner-spin-button {
     align-items: center;
 }
 
-#currency-image {
+#currency-image, #image-value-to-convert {
     width: 44px;
     height: 44px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
 }
 
 .content-result p {
