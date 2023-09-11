@@ -37,18 +37,18 @@ body {
     align-items: center;
 }
 
-.content-coins {
+.container-currency {
     display: flex;
     gap: 10px;
 }
 
-.container-coin {
+.content-currency {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
 }
 
-.container-coin label {
+.content-currency label {
     color: #777;    
     font-size: 14px;    
     font-weight: 400;
@@ -56,7 +56,7 @@ body {
     margin-bottom: 4px;
 }
 
-.container-coin select   {
+.content-currency select   {
     width: 327px;
     font-size: 16px;    
     font-weight: 700;
@@ -68,10 +68,6 @@ body {
     color: #555;
     appearance: none;
     cursor: pointer;    
-}
-
-.container-coin select option {
-    border: 2px solid red;
 }
 
 .container-convert-value {
@@ -151,6 +147,11 @@ input[type=number]::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#currency-image {
+    width: 44px;
+    height: 44px;
 }
 
 .content-result p {
