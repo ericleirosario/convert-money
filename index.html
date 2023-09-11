@@ -12,22 +12,21 @@
             <img class="logo-money" src="./assets/img/money.gif" alt="Logo Money">
         
             <div class="container-convert">
-                <div class="content-coins">
-                    <div class="container-coin">
-                        <label for="coin">Converter <b>de</b></label>
-                        <select name="coin">
-                            <option selected>Selecionar moeda</option>
-                            <option >R$ Real Brasileiro</option>
+                <div class="container-currency">
+                    <div class="content-currency">
+                        <label for="currency">Converter <b>de</b></label>
+                        <select name="currency">
+                            <option value="real">R$ Real Brasileiro</option>
                         </select>
                     </div>
-                    <div class="container-coin">
-                        <label for="coin"><b>para</b></label>
-                        <select name="coin">
-                            <option selected>Selecionar moeda</option>
-                            <option>US$ Dólar Amereicano</option>
-                            <option>€ Euro</option>
-                            <option>£ Libra</option>
-                            <option>₿ Bitcoin</option>
+                    <div class="content-currency">
+                        <label for="currency"><b>para</b></label>
+                        <select class="currency-select" name="currency">
+                            <option value="select" selected>Seleciona uma opção</option>                            
+                            <option value="dolar">US$ Dólar Amereicano</option>
+                            <option value="euro">€ Euro</option>
+                            <option value="libra">£ Libra</option>
+                            <option value="bitcoin">₿ Bitcoin</option>
                         </select>
                     </div>
                 </div>
@@ -43,21 +42,22 @@
 
                 <section class="container-convert-result">
                     <div class="content-result">
-                        <img src="./assets/img/real.svg" alt="Logo Moeda a Convrter">
+                        <img src="./assets/img/real.svg" alt="Logo Moeda a Converter">
                         <p>Real</p>
-                        <span>R$ 0,00</span>
+                        <span class="currency-value-to-convert">R$ 0,00</span>
                     </div>
 
                     <img class="image-arrow" src="./assets/img/seta.svg" alt="Logo Seta">
 
                     <div class="content-result">
-                        <img src="./assets/img/dollar.svg" alt="Logo Moeda a Convrter">
-                        <p>Dólar Americano</p>
-                        <span>US$ 0,00</span>
+                        <img id="currency-image" src="./assets/img/currency-interrocao.png" alt="Logo Moeda a Convrter">
+                        <p class="currency-name">Selecione uma moeda</p>
+                        <span class="currency-value-converted">0,00</span>
                     </div>
                 </section>
             </div>
         </div>                
     </main>    
 </body>
+<script src="./script.js"></script>
 </html>
