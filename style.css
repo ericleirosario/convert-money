@@ -107,7 +107,12 @@ input[type=number]::-webkit-inner-spin-button {
     
 }
 
-.button-convert {
+.container-button {
+    display: flex;
+    gap: 10px;
+}
+
+.button-convert, .button-reset {
     width: 327px;
     color: #FFF;
     font-size: 18px;
@@ -123,7 +128,11 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.button-convert:hover {
+.button-reset {
+    background: red;
+}
+
+.button-convert:hover,.button-reset:hover {
     opacity: 0.8;
 }
 
