@@ -1,4 +1,5 @@
 const convertButton = document.querySelector(".button-convert");
+const resetButton = document.querySelector(".button-reset");
 const currencySelectToConvert = document.querySelector(".currency-select-to-convert");
 const currencySelectConverted = document.querySelector(".currency-select-converted");
 
@@ -76,5 +77,21 @@ function changeCurrencyConverted() {
     convertValues()
 }
 
+function resetToValor(){
+    const valueToConvert = document.querySelector("#value");
+    const currencyValueToConvert = document.querySelector(".currency-value-to-convert");
+    const currencyImageConverted = document.getElementById("currency-image-converted");
+    const currencyNameConverted = document.querySelector(".currency-name-converted");
+    const currencyValueConverted = document.querySelector(".currency-value-converted");
+    
+    valueToConvert.value = "";
+    currencySelectConverted.value = "select";
+    currencyImageConverted.src = "./assets/img/currency-interrocao.png";
+    currencyNameConverted.innerHTML = "Selecione uma moeda";
+    currencyValueToConvert.innerHTML = "0,00";
+    currencyValueConverted.innerHTML = "0,00";
+}
+
 currencySelectConverted.addEventListener("change", changeCurrencyConverted);
 convertButton.addEventListener("click", convertValues);
+resetButton.addEventListener("click", resetToValor);
