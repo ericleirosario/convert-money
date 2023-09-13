@@ -15,14 +15,15 @@
                 <div class="container-currency">
                     <div class="content-currency">
                         <label for="currency">Converter <b>de</b></label>
-                        <select name="currency">
-                            <option value="real">R$ Real Brasileiro</option>
+                        <select class="currency-select-to-convert" name="currency">
+                            <option value="real">R$ Real Brasileiro</option>                                    
                         </select>
                     </div>
                     <div class="content-currency">
                         <label for="currency"><b>para</b></label>
-                        <select class="currency-select" name="currency">
-                            <option value="select" selected>Seleciona uma opção</option>                            
+                        <select class="currency-select-converted" name="currency">
+                            <option value="select" selected>Seleciona uma opção</option>
+                            <option value="real">R$ Real Brasileiro</option>                            
                             <option value="dolar">US$ Dólar Amereicano</option>
                             <option value="euro">€ Euro</option>
                             <option value="libra">£ Libra</option>
@@ -42,16 +43,16 @@
 
                 <section class="container-convert-result">
                     <div class="content-result">
-                        <img id="image-value-to-convert" src="./assets/img/real.png" alt="Logo Moeda a Converter">
-                        <p>Real</p>
+                        <img id="currency-image-to-convert" src="./assets/img/real.png" alt="Logo Moeda a Converter">
+                        <p class="currency-name-to-convert">Real Brasil</p>
                         <span class="currency-value-to-convert">R$ 0,00</span>
                     </div>
 
                     <img class="image-arrow" src="./assets/img/seta.svg" alt="Logo Seta">
 
                     <div class="content-result">
-                        <img id="currency-image" src="./assets/img/currency-interrocao.png" alt="Logo Moeda a Convrter">
-                        <p class="currency-name">Selecione uma moeda</p>
+                        <img id="currency-image-converted" src="./assets/img/currency-interrocao.png" alt="Logo Moeda a Convrter">
+                        <p class="currency-name-converted">Selecione uma moeda</p>
                         <span class="currency-value-converted">0,00</span>
                     </div>
                 </section>
