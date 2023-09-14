@@ -212,6 +212,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .logo-money {
+<<<<<<< HEAD
         width: 400px;
         height: 400px;
         margin-bottom: 20px;
@@ -222,6 +223,11 @@ input[type=number]::-webkit-inner-spin-button {
     .container-convert {
         position: relative;
         bottom: 90px;
+=======
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;       
+>>>>>>> 9f875fe756b87d7521fbe077cdc9db6e13a29adb
     }
 }
 
@@ -235,16 +241,25 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .logo-money {
+<<<<<<< HEAD
         width: 400px;
         height: 400px;        
         position: relative;
         bottom: 50px;       
+=======
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;       
+>>>>>>> 9f875fe756b87d7521fbe077cdc9db6e13a29adb
     }
 
     .container-convert {
         width: 480px;
+<<<<<<< HEAD
         position: relative;
         bottom: 90px;
+=======
+>>>>>>> 9f875fe756b87d7521fbe077cdc9db6e13a29adb
     }
 
     .container-currency {
@@ -292,17 +307,26 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .logo-money {
+<<<<<<< HEAD
         width: 350px;
         height: 350px;
         margin-bottom: 20px;
         position: relative;
         bottom: 50px;       
+=======
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;       
+>>>>>>> 9f875fe756b87d7521fbe077cdc9db6e13a29adb
     }
 
     .container-convert {
         width: 96%;
+<<<<<<< HEAD
         position: relative;
         bottom: 90px;
+=======
+>>>>>>> 9f875fe756b87d7521fbe077cdc9db6e13a29adb
     }
 
     .container-currency {
