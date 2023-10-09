@@ -19,4 +19,4 @@
 seja para transações financeiras, viagens ou simplesmente para acompanhar as flutuações do mercado. 
 A aplicação foi desenvolvida com foco na eficiência, precisão e na melhoria da experiência do usuário.</p>
 
-#### Aplicação: https://ericleirosario.github.io/convert-money/
+🔗 [Clique aqui para acessar a aplicação](https://ericleirosario.github.io/convert-money/)
