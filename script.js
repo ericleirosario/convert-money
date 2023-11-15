@@ -3,16 +3,18 @@ const resetButton = document.querySelector(".button-reset");
 const currencySelectToConvert = document.querySelector(".currency-select-to-convert");
 const currencySelectConverted = document.querySelector(".currency-select-converted");
 
-function convertValues() {
+async function convertValues() {
     const valueToConvert = document.querySelector("#value").value;
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert");
     const currencyValueConverted = document.querySelector(".currency-value-converted");
 
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL").then(response => response.json())
+
     const realToday = 1;
-    const dolarToday = 4.9835;
-    const euroToday = 5.3373;
-    const libraToday = 6.2169001;
-    const bitcoinToday = 125812.48;    
+    const dolarToday = data.USDBRL.high;
+    const euroToday = data.EURBRL.high;
+    const libraToday = data.GBPBRL.high;
+    const bitcoinToday = data.BTCBRL.high;    
 
     if(currencySelectConverted.value == "real"){
         currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR",{
